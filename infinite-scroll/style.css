@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+html {
+  box-sizing: border-box;
+  /* overflow-y: hidden; scrollwheel gets removed */
+  /* no extra scroll wheel due to padding */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh; /*always takes full height for the background*/
+  font-family: "Comforter Brush", cursive; /* second font ie sans-serif is a backup font in case our google didn't dint work*/
+  background: whitesmoke;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 6px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+/*trick for centering the loader svg*/
+.loader {
+  position: fixed; /* that even if someone scrolls it will be there*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /*this would make the centre of box centre unlike before the top left tip of the svg was aligned at the centre it centres the image within the page*/
+} 
+/* for centering the image */
+.image-container{
+  margin: 10px 20%; /*only 40% is image */
+}
+.image-container img{
+  width: 100%;
+}
+
+
+@media screen and (max-width:400px) {
+  .image-container {
+    margin: 10px;
+}
+  
+}
+
