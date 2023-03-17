@@ -3,7 +3,7 @@ const imageContainer = document.getElementById("image-container");
 photosArray = [];
 //api
 let count = 1;
-const apiKey = "jHYgO5iaRQlFjHhPvwfxjPGh8yVWhGM_ktB_5QVJh1E";
+const apiKey = "your_api_key";
 let apiUrl = `https://api.unsplash.com/photos/?client_id=${apiKey}&count=${count}`;
 //helper function to avoid dry code
 
